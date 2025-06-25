@@ -7,7 +7,7 @@ uploaded_file = st.file_uploader("Upload an Image", type=["png", "jpg", "jpeg", 
 
 if uploaded_file is not None:
     img = Image.open(uploaded_file)
-    st.image(img, caption="Original Image")
+    st.image(img, caption="Original Image", use_container_width=True)
     
     if st.button("Invert Colors"):
         inverted_img = ImageOps.invert(img.convert('RGB'))
