@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image, ImageOps
 
-st.title("🖼️ Image Inverter App")
+st.title("🖼️ Image Inverter Color")
 
 uploaded_file = st.file_uploader("Upload an Image", type=["png", "jpg", "jpeg", "webp"])
 
